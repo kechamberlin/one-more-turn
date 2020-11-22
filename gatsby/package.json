@@ -1,7 +1,7 @@
 {
   "name": "one-more-turn-frontend",
   "private": true,
-  "description": "Slick Serves the Sweetest Slices",
+  "description": "Civilization 6 gameplay tracker",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
