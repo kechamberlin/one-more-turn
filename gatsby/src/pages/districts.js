@@ -11,3 +11,27 @@ export default function DistrictsPage() {
     </>
   );
 }
+
+export const query = graphql`
+  query($skip: Int! = 0, $pageSize: Int! = 3) {
+    districts: allSanityDistrict(limit: $pageSize, skip: $skip) {
+      totalCount
+      nodes {
+        id
+        name
+        slug {
+          current
+        }
+        image {
+          asset {
+            fluid(maxWidth: 400) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+        description
+        adjacency
+      }
+    }
+  }
+`;
