@@ -75,7 +75,7 @@ const NavStyles = styled.nav`
 
 export default function Nav() {
   return (
-    <nav>
+    <NavStyles>
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -90,6 +90,6 @@ export default function Nav() {
           <Link to="/wishlist">Wish List</Link>
         </li>
       </ul>
-    </nav>
+    </NavStyles>
   );
 }
