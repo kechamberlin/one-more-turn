@@ -30,10 +30,16 @@ const ContentStyles = styled.div`
 
 export default function Layout({ children }) {
   return (
-    <div>
-      <Nav />
-      {children}
-      <Footer />
-    </div>
+    <>
+      <GlobalStyles />
+      <Typography />
+      <SiteBorderStyles>
+        <ContentStyles>
+          <Nav />
+          {children}
+          <Footer />
+        </ContentStyles>
+      </SiteBorderStyles>
+    </>
   );
 }
