@@ -77,6 +77,11 @@ export default function Nav() {
   return (
     <NavStyles>
       <ul>
+        <li className="logo-item">
+          <Link to="/">
+            <Logo />
+          </Link>
+        </li>
         <li>
           <Link to="/">Home</Link>
         </li>
