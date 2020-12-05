@@ -1,10 +1,10 @@
 {
-  "name": "slicks-slices-backend",
+  "name": "one-more-turn-backend",
   "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "Wes Bos <wesbos@gmail.com>",
+  "author": "Kris Chamberlin <kris.elliott.chamberlin@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
     "lint": "eslint .",
