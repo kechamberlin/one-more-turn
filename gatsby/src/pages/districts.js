@@ -4,7 +4,6 @@ import Img from 'gatsby-image';
 import styled from 'styled-components';
 import Pagination from '../components/Pagination';
 
-export default function DistrictsPage() {
 const DistrictGrid = styled.div`
   display: grid;
   grid-gap: 2rem;
@@ -34,6 +33,10 @@ const DistrictStyles = styled.div`
     text-align: center;
   }
 `;
+
+export default function DistrictsPage({ data, pageContext }) {
+  const districts = data.districts.nodes;
+  console.log(districts);
   return (
     <>
       <p>Districts Page</p>
