@@ -39,7 +39,26 @@ export default function DistrictsPage({ data, pageContext }) {
   console.log(districts);
   return (
     <>
-      <p>Districts Page</p>
+      <Pagination
+        pageSize={parseInt(process.env.GATSBY_PAGE_SIZE)}
+        totalCount={data.districts.totalCount}
+        currentPage={pageContext.currentPage || 1}
+        skip={pageContext.skip}
+        base="/districts"
+      />
+      <DistrictGrid>
+        {districts.map((district) => (
+          <DistrictStyles>
+            <Link to={`/district/${district.slug.current}`}>
+              <h2>
+                <span className="mark">{district.name}</span>
+              </h2>
+            </Link>
+            <Img fluid={district.image.asset.fluid} />
+            <p className="description">{district.description}</p>
+          </DistrictStyles>
+        ))}
+      </DistrictGrid>
     </>
   );
 }
