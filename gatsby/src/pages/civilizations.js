@@ -3,10 +3,13 @@ import { graphql } from 'gatsby';
 import CivilizationList from '../components/CivilizationList';
 import VictoriesFilter from '../components/VictoriesFilter';
 
-export default function CivilizationsPage() {
+export default function CivilizationsPage({ data, pageContext }) {
+  const civs = data.civilizations.nodes;
   return (
     <>
-      <p>Civilizations Page</p>
+      {/* <p>Civilizations Page</p> */}
+      <VictoriesFilter activeVictory={pageContext.victory} />
+      <CivilizationList civs={civs} />
     </>
   );
 }
