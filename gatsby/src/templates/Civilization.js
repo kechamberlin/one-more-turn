@@ -13,17 +13,20 @@ const CivilizationGrid = styled.div`
 export default function SingleCivPage({ data }) {
   const { civilization } = data;
   return (
-    <CivilizationGrid>
-      <Img fluid={civilization.image.asset.fluid} />
-      <div>
-        <h2 className="mark">{civilization.name}</h2>
-        <ul>
-          {civilization.victories.map((victory) => (
-            <li key={victory.id}>{victory.name}</li>
-          ))}
-        </ul>
-      </div>
-    </CivilizationGrid>
+    <>
+      <SEO title={civilization.name} />
+      <CivilizationGrid>
+        <Img fluid={civilization.image.asset.fluid} />
+        <div>
+          <h2 className="mark">{civilization.name}</h2>
+          <ul>
+            {civilization.victories.map((victory) => (
+              <li key={victory.id}>{victory.name}</li>
+            ))}
+          </ul>
+        </div>
+      </CivilizationGrid>
+    </>
   );
 }
 
