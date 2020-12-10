@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import stripes from '../assets/images/stripes.svg';
 
 const LogoStyles = styled.div`
   /* This value controls the entire size of the logo*/
@@ -11,7 +10,6 @@ const LogoStyles = styled.div`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   margin: 0;
   --borderSize: 1em;
-  background: white url(${stripes});
   background-size: 150em;
   border: var(--borderSize) solid white;
   display: flex;
