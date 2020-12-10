@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import bg from '../assets/images/bg_stone_repeat.webp';
 
 const GlobalStyles = createGlobalStyle`
   :root {
