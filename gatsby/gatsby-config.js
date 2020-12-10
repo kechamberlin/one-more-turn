@@ -9,6 +9,7 @@ export default {
     description: 'A Civilization 6 gameplay tracker',
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
       // This is the name of the added plugin
