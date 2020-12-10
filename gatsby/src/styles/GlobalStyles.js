@@ -65,7 +65,6 @@ const GlobalStyles = createGlobalStyle`
   hr {
     border: 0;
     height: 8px;
-    background-image: url(${stripes});
     background-size: 1500px;
   }
   img {
