@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import SEO from '../components/SEO';
 // import styled from 'styled-components';
 
 export default function DistrictPage({ data: { district } }) {
