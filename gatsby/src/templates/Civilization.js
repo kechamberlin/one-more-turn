@@ -14,7 +14,10 @@ export default function SingleCivPage({ data }) {
   const { civilization } = data;
   return (
     <>
-      <SEO title={civilization.name} />
+      <SEO
+        title={civilization.name}
+        image={civilization.image?.asset?.fluid?.src}
+      />
       <CivilizationGrid>
         <Img fluid={civilization.image.asset.fluid} />
         <div>
