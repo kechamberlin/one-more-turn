@@ -15,7 +15,9 @@ export default function CivilizationsPage({ data, pageContext }) {
       />
       {/* <p>Civilizations Page</p> */}
       <VictoriesFilter activeVictory={pageContext.victory} />
-      <CivilizationList civs={civs} />
+      <CivilizationList
+        civs={civs.sort((a, b) => a.name.localeCompare(b.name))}
+      />
     </>
   );
 }
