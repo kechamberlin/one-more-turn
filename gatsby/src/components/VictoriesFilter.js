@@ -107,28 +107,32 @@ export default function VictoriesFilter({ activeVictory }) {
         <span className="count">{civilizations.nodes.length}</span>
       </Link>
       {/* <p>VICTORIES</p> */}
-      {victoriesWithCounts.map((victory) => (
-        <Link
-          key={victory.id}
-          to={`/victory/${victory.name}`}
-          className={
-            victory.name === activeVictory && victory.name === 'Domination'
-              ? 'domination'
-              : victory.name === activeVictory && victory.name === 'Cultural'
-              ? 'cultural'
-              : victory.name === activeVictory && victory.name === 'Religious'
-              ? 'religious'
-              : victory.name === activeVictory && victory.name === 'Scientific'
-              ? 'scientific'
-              : victory.name === activeVictory && victory.name === 'Diplomatic'
-              ? 'diplomatic'
-              : ''
-          }
-        >
-          <span className="name">{victory.name}</span>
-          <span className="count">{victory.count}</span>
-        </Link>
-      ))}
+      {victoriesWithCounts
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .map((victory) => (
+          <Link
+            key={victory.id}
+            to={`/victory/${victory.name}`}
+            className={
+              victory.name === activeVictory && victory.name === 'Domination'
+                ? 'domination'
+                : victory.name === activeVictory && victory.name === 'Cultural'
+                ? 'cultural'
+                : victory.name === activeVictory && victory.name === 'Religious'
+                ? 'religious'
+                : victory.name === activeVictory &&
+                  victory.name === 'Scientific'
+                ? 'scientific'
+                : victory.name === activeVictory &&
+                  victory.name === 'Diplomatic'
+                ? 'diplomatic'
+                : ''
+            }
+          >
+            <span className="name">{victory.name}</span>
+            <span className="count">{victory.count}</span>
+          </Link>
+        ))}
     </VictoriesStyles>
   );
 }
