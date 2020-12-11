@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import CivilizationList from '../components/CivilizationList';
 import VictoriesFilter from '../components/VictoriesFilter';
+import SEO from '../components/SEO';
 
 export default function CivilizationsPage({ data, pageContext }) {
   const civs = data.civilizations.nodes;
