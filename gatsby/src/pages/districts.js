@@ -66,7 +66,11 @@ export default function DistrictsPage({ data, pageContext }) {
 
 export const query = graphql`
   query($skip: Int! = 0, $pageSize: Int! = 3) {
-    districts: allSanityDistrict(limit: $pageSize, skip: $skip) {
+    districts: allSanityDistrict(
+      limit: $pageSize
+      skip: $skip
+      sort: { order: ASC, fields: name }
+    ) {
       totalCount
       nodes {
         id
