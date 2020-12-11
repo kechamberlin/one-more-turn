@@ -39,6 +39,7 @@ export default function DistrictsPage({ data, pageContext }) {
   const districts = data.districts.nodes;
   return (
     <>
+      <SEO title={`Districts - Page ${pageContext.currentPage || 1}`} />
       <Pagination
         pageSize={parseInt(process.env.GATSBY_PAGE_SIZE)}
         totalCount={data.districts.totalCount}
