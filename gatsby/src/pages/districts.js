@@ -37,7 +37,6 @@ const DistrictStyles = styled.div`
 
 export default function DistrictsPage({ data, pageContext }) {
   const districts = data.districts.nodes;
-  console.log(districts);
   return (
     <>
       <Pagination
