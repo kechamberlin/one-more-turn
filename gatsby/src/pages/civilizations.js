@@ -8,6 +8,11 @@ export default function CivilizationsPage({ data, pageContext }) {
   const civs = data.civilizations.nodes;
   return (
     <>
+      <SEO
+        title={
+          pageContext.victory ? `${pageContext.victory} Victory` : `All Civs`
+        }
+      />
       {/* <p>Civilizations Page</p> */}
       <VictoriesFilter activeVictory={pageContext.victory} />
       <CivilizationList civs={civs} />
