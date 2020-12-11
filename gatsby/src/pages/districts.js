@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 import Pagination from '../components/Pagination';
+import SEO from '../components/SEO';
 
 const DistrictGrid = styled.div`
   display: grid;
