@@ -29,20 +29,6 @@ const CivStyles = styled.div`
 `;
 
 function SingleCiv({ civ }) {
-  //   console.log(civ);
-
-  // Returns an array of victory names:
-  // ["Cultural", "Diplomatic", "Domination"]
-  // ["Scientific"]
-  // ["Domination", "Religious"]
-  //   console.log(civ.victories.map((victory) => victory.name));
-
-  //   console.log(civ.leaders.map((leader) => leader.image));
-
-  //   console.log(
-  //     Object.values(civ.leaders.map((portrait) => portrait.image.asset.fixed))
-  //   );
-
   return (
     <CivStyles>
       <Link to={`/civilization/${civ.slug.current}`}>
@@ -57,12 +43,6 @@ function SingleCiv({ civ }) {
 
       <Img fixed={civ.leaders[0].image.asset.fixed} alt={civ.name} />
 
-      {/* <Img
-          fixed={Object.values(
-            civ.leaders.map((portrait) => portrait.image.asset.fixed)
-          )}
-          alt={civ.leaders.name}
-        /> */}
     </CivStyles>
   );
 }
