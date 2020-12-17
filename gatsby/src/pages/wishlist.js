@@ -6,7 +6,9 @@ import WishListStyles from '../styles/WishListStyles';
 import MenuItemStyles from '../styles/MenuItemStyles';
 import useCivilization from '../utils/useCivilization';
 
-export default function WishListPage() {
+export default function WishListPage({ data }) {
+  const civs = data.civilizations.nodes;
+  const { order, addToOrder, removeFromOrder } = useCivilization({ civs });
   return (
     <>
       <SEO title="Your Civ List" />
