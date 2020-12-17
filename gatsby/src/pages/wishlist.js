@@ -5,6 +5,7 @@ import SEO from '../components/SEO';
 import WishListStyles from '../styles/WishListStyles';
 import MenuItemStyles from '../styles/MenuItemStyles';
 import useCivilization from '../utils/useCivilization';
+import CivilizationWishList from '../components/CivilizationWishList';
 
 export default function WishListPage({ data }) {
   const civs = data.civilizations.nodes;
