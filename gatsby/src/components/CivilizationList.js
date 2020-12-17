@@ -40,9 +40,15 @@ function SingleCiv({ civ }) {
 
       <p>{civ.victories.map((victory) => victory.name).join(', ')}</p>
       <p>{civ.leaders.map((leader) => leader.leader).join(', ')}</p>
-
-      <Img fixed={civ.leaders[0].image.asset.fixed} alt={civ.name} />
-
+      <div>
+        {civ.leaders.map((portrait) => (
+          <Img
+            key={portrait.id}
+            fixed={portrait.image.asset.fixed}
+            alt={civ.name}
+          />
+        ))}
+      </div>
     </CivStyles>
   );
 }
