@@ -10,3 +10,28 @@ export default function WishListPage() {
     </>
   );
 }
+
+export const query = graphql`
+  query {
+    civilizations: allSanityCivilization {
+      nodes {
+        id
+        name
+        slug {
+          current
+        }
+        image {
+          asset {
+            fluid(maxWidth: 100) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+        victories {
+          name
+          id
+        }
+      }
+    }
+  }
+`;
