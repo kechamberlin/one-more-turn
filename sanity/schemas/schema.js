@@ -8,11 +8,12 @@ import civilization from './civilization';
 import victory from './victory';
 import district from './district';
 import leader from './leader';
+import newCivs from './newCivs';
 
 export default createSchema({
   // We name our schema
   name: 'default',
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([civilization, victory, district, leader]),
+  types: schemaTypes.concat([civilization, victory, district, leader, newCivs]),
 });
