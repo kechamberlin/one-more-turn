@@ -49,7 +49,7 @@ export default function DistrictsPage({ data, pageContext }) {
       />
       <DistrictGrid>
         {districts.map((district) => (
-          <DistrictStyles>
+          <DistrictStyles key={district.id}>
             <Link to={`/district/${district.slug.current}`}>
               <h2>
                 <span className="mark">{district.name}</span>
