@@ -1,6 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import SEO from '../components/SEO';
+import WishListStyles from '../styles/WishListStyles';
+import MenuItemStyles from '../styles/MenuItemStyles';
 
 export default function WishListPage() {
   return (
