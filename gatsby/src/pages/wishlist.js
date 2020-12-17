@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import SEO from '../components/SEO';
 import WishListStyles from '../styles/WishListStyles';
 import MenuItemStyles from '../styles/MenuItemStyles';
