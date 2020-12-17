@@ -1,4 +1,7 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import SEO from '../components/SEO';
+import NewList from '../components/NewList';
 
 export default function HomePage() {
   return (
