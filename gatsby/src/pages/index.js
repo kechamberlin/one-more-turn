@@ -11,3 +11,39 @@ export default function HomePage() {
     </>
   );
 }
+
+export const query = graphql`
+  query MyQuery {
+    new: allSanityNew {
+      nodes {
+        newCivs {
+          name
+          image {
+            asset {
+              fixed(width: 100, height: 100) {
+                ...GatsbySanityImageFixed
+              }
+              fluid(maxWidth: 10) {
+                ...GatsbySanityImageFluid
+              }
+            }
+          }
+          leaders {
+            id
+            leader
+            image {
+              asset {
+                fixed(width: 100, height: 100) {
+                  ...GatsbySanityImageFixed
+                }
+                fluid(maxWidth: 100) {
+                  ...GatsbySanityImageFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;
