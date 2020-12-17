@@ -14,6 +14,43 @@ export default function WishListPage({ data }) {
       <SEO title="Your Civ List" />
         <fieldset className="menu">
           <legend>Menu</legend>
+          {civs
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((civ) => (
+              <MenuItemStyles key={civ.id}>
+                <Img
+                  width="50"
+                  height="50"
+                  fluid={civ.image.asset.fluid}
+                  alt={civ.name}
+                />
+                <div>
+                  <h2>{civ.name}</h2>
+                </div>
+                <div>
+                  {[
+                    'Cultural',
+                    'Diplomatic',
+                    'Domination',
+                    'Religious',
+                    'Scientific',
+                  ].map((win) => (
+                    <button
+                      type="button"
+                      key={win}
+                      onClick={() =>
+                        addToOrder({
+                          id: civ.id,
+                          win,
+                        })
+                      }
+                    >
+                      {win}
+                    </button>
+                  ))}
+                </div>
+              </MenuItemStyles>
+            ))}
         </fieldset>
         <fieldset className="order">
           <legend>Order</legend>
