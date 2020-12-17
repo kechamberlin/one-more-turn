@@ -12,6 +12,12 @@ export default function WishListPage({ data }) {
   return (
     <>
       <SEO title="Your Civ List" />
+        <fieldset className="menu">
+          <legend>Menu</legend>
+        </fieldset>
+        <fieldset className="order">
+          <legend>Order</legend>
+        </fieldset>
     </>
   );
 }
