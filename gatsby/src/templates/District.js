@@ -4,7 +4,6 @@ import Img from 'gatsby-image';
 import SEO from '../components/SEO';
 
 export default function DistrictPage({ data: { district } }) {
-  console.log(district);
   return (
     <>
       <SEO title={district.name} image={district.image?.asset?.fluid?.src} />
