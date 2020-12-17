@@ -7,8 +7,8 @@ export default function HomePage({ data }) {
   const newCivs = data.new.nodes;
   return (
     <>
-      <p>Home Page</p>
-      <p>This is another element</p>
+      <SEO title="Home" />
+      <NewList civs={newCivs} />
     </>
   );
 }
