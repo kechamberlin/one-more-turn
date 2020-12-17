@@ -13,6 +13,7 @@ export default function WishListPage({ data }) {
   return (
     <>
       <SEO title="Your Civ List" />
+      <WishListStyles>
         <fieldset className="menu">
           <legend>Menu</legend>
           {civs
@@ -61,6 +62,7 @@ export default function WishListPage({ data }) {
             civilizations={civs}
           />
         </fieldset>
+      </WishListStyles>
     </>
   );
 }
