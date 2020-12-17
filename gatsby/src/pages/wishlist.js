@@ -55,6 +55,11 @@ export default function WishListPage({ data }) {
         </fieldset>
         <fieldset className="order">
           <legend>Order</legend>
+          <CivilizationWishList
+            order={order}
+            removeFromOrder={removeFromOrder}
+            civilizations={civs}
+          />
         </fieldset>
     </>
   );
