@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import SEO from '../components/SEO';
 import WishListStyles from '../styles/WishListStyles';
 import MenuItemStyles from '../styles/MenuItemStyles';
+import useCivilization from '../utils/useCivilization';
 
 export default function WishListPage() {
   return (
