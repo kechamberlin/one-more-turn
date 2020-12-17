@@ -3,7 +3,8 @@ import { graphql } from 'gatsby';
 import SEO from '../components/SEO';
 import NewList from '../components/NewList';
 
-export default function HomePage() {
+export default function HomePage({ data }) {
+  const newCivs = data.new.nodes;
   return (
     <>
       <p>Home Page</p>
