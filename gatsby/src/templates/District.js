@@ -16,7 +16,7 @@ export default function DistrictPage({ data: { district } }) {
         <h2>Effects</h2>
         <ul>
           {district.adjacency.map((bonus) => (
-            <li>{bonus}</li>
+            <li key={bonus.id}>{bonus}</li>
           ))}
         </ul>
       </div>
