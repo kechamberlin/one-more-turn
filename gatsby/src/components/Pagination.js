@@ -41,7 +41,6 @@ export default function Pagination({
   pageSize,
   totalCount,
   currentPage,
-  skip,
   base,
 }) {
   // Variables
