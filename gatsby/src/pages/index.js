@@ -11,6 +11,11 @@ export default function HomePage({ data }) {
   const [gameInfo, setGameInfo] = useState([]);
   const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    // eslint-disable-next-line no-use-before-define
+    fetchGameInfo();
+  }, []);
+
   const fetchGameInfo = async () => {
     setLoading(true);
     const response = await fetch(
