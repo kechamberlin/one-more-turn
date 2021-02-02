@@ -45,7 +45,7 @@ const GlobalStyles = createGlobalStyle`
   }
   html {
     scrollbar-width: thin;
-    scrollbar-color: var(--red) var(--white);
+    scrollbar-color: #dda832 var(--white);
   }
   body::-webkit-scrollbar-track {
     background: var(--white);
