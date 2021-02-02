@@ -10,7 +10,17 @@ const WishListStyles = styled.div`
     grid-column: span 2;
     max-height: 600px;
     overflow: auto;
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 0.5rem;
+    }
+    label + label {
+      margin-top: 1rem;
+    }
     align-content: start;
+
     &.order,
     &.menu {
       grid-column: span 1;
