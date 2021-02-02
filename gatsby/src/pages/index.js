@@ -18,10 +18,11 @@ export const query = graphql`
     new: allSanityNew {
       nodes {
         newCivs {
+          id
           name
           image {
             asset {
-              fixed(width: 100, height: 100) {
+              fixed(width: 150, height: 150) {
                 ...GatsbySanityImageFixed
               }
               fluid(maxWidth: 10) {
@@ -34,10 +35,11 @@ export const query = graphql`
             leader
             image {
               asset {
-                fixed(width: 100, height: 100) {
+                id
+                fixed(width: 124, height: 124) {
                   ...GatsbySanityImageFixed
                 }
-                fluid(maxWidth: 100) {
+                fluid(maxWidth: 400) {
                   ...GatsbySanityImageFluid
                 }
               }
