@@ -21,8 +21,8 @@ const CivStyles = styled.div`
     --rows: auto auto 1fr;
   }
   grid-template-rows: var(--rows, subgrid);
-  grid-row: span 3;
-  grid-gap: 1rem;
+  grid-row: span 1;
+  grid-gap: 2rem;
   h2,
   p {
     margin: 0;
