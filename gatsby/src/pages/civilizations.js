@@ -13,7 +13,6 @@ export default function CivilizationsPage({ data, pageContext }) {
           pageContext.victory ? `${pageContext.victory} Victory` : `All Civs`
         }
       />
-      {/* <p>Civilizations Page</p> */}
       <VictoriesFilter activeVictory={pageContext.victory} />
       <CivilizationList
         civs={civs.sort((a, b) => a.name.localeCompare(b.name))}
@@ -22,7 +21,6 @@ export default function CivilizationsPage({ data, pageContext }) {
   );
 }
 
-// TODO: after victories, add leaders { id name }
 export const query = graphql`
   query($victory: [String]) {
     civilizations: allSanityCivilization(
