@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import bg from '../assets/images/bg_stone_repeat.webp';
+import bg from '../assets/images/civ-menu.jpg';
 
 const GlobalStyles = createGlobalStyle`
   :root {
