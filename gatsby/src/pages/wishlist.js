@@ -15,21 +15,21 @@ export default function WishListPage({ data }) {
       <SEO title="Your Civ List" />
       <WishListStyles>
         <fieldset className="menu">
-          <legend>Menu</legend>
+          <legend>Civilizations</legend>
           {civs
             .sort((a, b) => a.name.localeCompare(b.name))
             .map((civ) => (
               <MenuItemStyles key={civ.id}>
                 <Img
-                  width="50"
-                  height="50"
+                  width="25"
+                  height="25"
                   fluid={civ.image.asset.fluid}
                   alt={civ.name}
                 />
-                <div>
-                  <h2>{civ.name}</h2>
-                </div>
-                <div>
+
+                <h2 className="wishlist-civ-name">{civ.name}</h2>
+
+                <div className="button-grid">
                   {[
                     'Cultural',
                     'Diplomatic',
