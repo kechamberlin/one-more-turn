@@ -63,7 +63,7 @@ export default function Nav() {
           </Link>
         </li>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">About</Link>
         </li>
         <li>
           <Link to="/civilizations">Civilizations</Link>
