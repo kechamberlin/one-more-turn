@@ -17,23 +17,22 @@ const NewCivGrid = styled.div`
 
 function NewCiv({ civ }) {
   return (
-    <>
-      <p>{civ.newCivs.map((test) => test.name)}</p>
-
-      <p>
-        {civ.newCivs.map((leader) =>
-          leader.leaders.map((person) => person.leader)
-        )}
-      </p>
-
-      {civ.newCivs.map((leader) =>
-        leader.leaders.map((person) => <Img fixed={person.image.asset.fixed} />)
-      )}
-
-      {civ.newCivs.map((photo) => (
-        <Img fixed={photo.image.asset.fixed} />
+    <NewCivGrid>
+      {civ.newCivs.map((civilization) => (
+        <div key={civilization.id}>
+          {civilization.leaders.map((person) => (
+            <div key={civilization.id} className="single-new-civ">
+              <Img
+                key={person.id}
+                fluid={person.image.asset.fluid}
+                alt={person.leader}
+              />
+              <h3 key={civilization.id}>{civilization.name}</h3>
+            </div>
+          ))}
+        </div>
       ))}
-    </>
+    </NewCivGrid>
   );
 }
 
