@@ -51,8 +51,6 @@ function SingleCiv({ civ }) {
         </div>
       </Link>
 
-      <p>{civ.victories.map((victory) => victory.name).join(', ')}</p>
-      <p>{civ.leaders.map((leader) => leader.leader).join(', ')}</p>
       <div>
         {civ.leaders.map((portrait) => (
           <Img
@@ -61,6 +59,10 @@ function SingleCiv({ civ }) {
             alt={civ.name}
           />
         ))}
+        <h2 className="mobile-name">
+          {civ.leaders.map((leader) => leader.leader).join(', ')}
+        </h2>
+        <h5>{civ.victories.map((victory) => victory.name).join(', ')}</h5>
       </div>
     </CivStyles>
   );
