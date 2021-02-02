@@ -27,10 +27,9 @@ export default function HomePage({ data }) {
   };
 
   return (
-    <>
+    <div className="center">
       <SEO title="Home" />
-      <NewList civs={newCivs} />
-    </>
+    </div>
   );
 }
 
