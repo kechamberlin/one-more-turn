@@ -5,11 +5,11 @@ const WishListStyles = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   fieldset {
+    display: grid;
+    gap: 1rem;
     grid-column: span 2;
     max-height: 600px;
     overflow: auto;
-    display: grid;
-    gap: 1rem;
     align-content: start;
     &.order,
     &.menu {
