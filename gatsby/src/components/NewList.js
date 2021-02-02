@@ -37,10 +37,11 @@ function NewCiv({ civ }) {
 }
 
 export default function NewList({ civs }) {
+  const newCivId = civs.map((newCiv) => newCiv.newCivs.map((id) => id.id));
   return (
     <>
       {civs.map((civ) => (
-        <NewCiv civ={civ} />
+        <NewCiv key={newCivId} civ={civ} />
       ))}
     </>
   );
