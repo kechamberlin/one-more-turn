@@ -5,14 +5,14 @@ const GlobalStyles = createGlobalStyle`
   :root {
     --red: #FF4949;
     --black: #2E2E2E;
-    --yellow: #ffc600;
     --white: #fff;
     --grey: #efefef;
-    --purple: #FF00FF;
-    --greyblue: rgb(135, 155, 187);
-    --blue: #1E90FF;
-    --green: rgb(46, 141, 143);
     --all: #B8860B;
+    --domination: crimson;
+    --cultural: #db70d2;
+    --religious: #8799b4;
+    --scientific: deepskyblue;
+    --diplomatic: #2d8d91;
   }
   html {
     background-image: url(${bg});
