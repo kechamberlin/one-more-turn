@@ -39,7 +39,7 @@ const CivStyles = styled.div`
 
 function SingleCiv({ civ }) {
   return (
-    <CivStyles>
+    <CivStyles className="center">
       <Link to={`/civilization/${civ.slug.current}`}>
         <h2>
           <Img fixed={civ.image.asset.fixed} alt={civ.name} />
