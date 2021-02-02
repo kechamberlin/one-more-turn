@@ -29,11 +29,8 @@ const NavStyles = styled.nav`
     @media (max-width: 860px) {
       font-size: 2rem;
     }
-    /* &[aria-current='page'] {
-      color: var(--red);
-    } */
   }
-  @media (max-width: 600px) {
+  @media (max-width: 691px) {
     --columns: 4;
     margin-bottom: 2rem;
     border-bottom: 2px solid var(--grey);
