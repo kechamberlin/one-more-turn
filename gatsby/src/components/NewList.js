@@ -1,5 +1,19 @@
 import React from 'react';
 import Img from 'gatsby-image';
+import styled from 'styled-components';
+
+const NewCivGrid = styled.div`
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  @media (max-width: 425px) {
+    display: block;
+    .single-new-civ {
+      margin-bottom: 3rem;
+    }
+  }
+`;
 
 function NewCiv({ civ }) {
   return (
