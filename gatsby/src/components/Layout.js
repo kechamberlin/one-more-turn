@@ -13,7 +13,7 @@ const SiteBorderStyles = styled.div`
   margin-top: clamp(2rem, 10vw, 12rem);
   background-size: 1500px;
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.044);
-  border: 5px solid white;
+  border: 2px solid #dda833;
   @media (max-width: 1100px) {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
