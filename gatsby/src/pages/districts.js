@@ -34,12 +34,11 @@ export default function DistrictsPage({ data, pageContext }) {
         {districts.map((district) => (
           <DistrictStyles key={district.id}>
             <Link to={`/district/${district.slug.current}`}>
-              <h2>
-                <span className="mark">{district.name}</span>
-              </h2>
+              <Img fluid={district.image.asset.fluid} />
+              <h1 className="center">
+                <span>{district.name}</span>
+              </h1>
             </Link>
-            <Img fluid={district.image.asset.fluid} />
-            <p className="description">{district.description}</p>
           </DistrictStyles>
         ))}
       </DistrictGrid>
