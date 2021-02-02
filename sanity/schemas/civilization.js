@@ -32,6 +32,18 @@ export default {
       },
     },
     {
+      name: 'ability',
+      title: 'Civ Ability',
+      type: 'string',
+      description: 'Civ Ability Name',
+    },
+    {
+      name: 'description',
+      title: 'Ability Description',
+      type: 'text',
+      description: 'Civ Ability Description',
+    },
+    {
       name: 'victories',
       title: 'Victories',
       type: 'array',
