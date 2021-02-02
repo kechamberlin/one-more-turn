@@ -21,26 +21,26 @@ const VictoriesStyles = styled.div`
     text-decoration: none;
     font-size: clamp(1.5rem, 1.4vw, 2.5rem);
     &[aria-current='page'] {
-      background: var(--all);
+      background: #dda832;
     }
     .count {
       background: white;
       padding: 2px 5px;
     }
-    &.domination {
-      background: var(--red);
-    }
     &.cultural {
-      background: var(--purple);
-    }
-    &.religious {
-      background: var(--greyblue);
-    }
-    &.scientific {
-      background: var(--blue);
+      background: var(--cultural);
     }
     &.diplomatic {
-      background: var(--green);
+      background: var(--diplomatic);
+    }
+    &.domination {
+      background: var(--domination);
+    }
+    &.religious {
+      background: var(--religious);
+    }
+    &.scientific {
+      background: var(--scientific);
     }
   }
 `;
