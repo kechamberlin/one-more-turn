@@ -19,11 +19,6 @@ const MenuItemStyles = styled.div`
     font-size: 1.5rem;
   }
 
-  //   ** START HERE FOR BUTTON GAP STYLING **
-  //   button + button {
-  //     margin-left: 1rem;
-  //   }
-
   .remove {
     background: none;
     color: var(--red);
