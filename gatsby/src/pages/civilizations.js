@@ -38,6 +38,7 @@ export const query = graphql`
         }
         leaders {
           id
+          intro
           leader
           image {
             asset {
