@@ -11,6 +11,16 @@ export default function HomePage({ data }) {
   const [gameInfo, setGameInfo] = useState([]);
   const [loading, setLoading] = useState(false);
 
+  const fetchGameInfo = async () => {
+    setLoading(true);
+    const response = await fetch(
+      `https://api.rawg.io/api/games/10297?key=${process.env.GATSBY_API_KEY}`
+    );
+    const gameData = await response.json();
+    setGameInfo(gameData);
+    setLoading(false);
+  };
+
   return (
     <>
       <SEO title="Home" />
