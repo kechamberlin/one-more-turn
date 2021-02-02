@@ -25,8 +25,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 2rem;
   }
   fieldset {
-    border-color: rgba(0,0,0,0.1);
-    border-width: 1px;
+    border: 1px solid rgba(0,0,0,0.1);
   }
   button {
     background: var(--red);
