@@ -9,7 +9,9 @@ export default function CivilizationWishList({
 }) {
   return (
     <>
-      {order.length === 0 && <h2>Your Wish List is Empty</h2>}
+      {order.length === 0 && (
+        <h2 className="center">Your Wish List is Empty</h2>
+      )}
       {order.map((singleOrder, index) => {
         const civilization = civilizations.find(
           (civ) => civ.id === singleOrder.id
