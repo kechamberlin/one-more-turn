@@ -6,10 +6,9 @@ import styled from 'styled-components';
 // Whole Page Styling
 const CivGridStyles = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 4rem;
-  // ** Adjust following as needed: **
-  grid-auto-rows: auto auto auto auto;
+  // ** NOTE: CAN CHANGE TO minmax(300px (or 250px), 1fr) for showing 3 at a time **
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem;
 `;
 
 // Single Civ Styling
