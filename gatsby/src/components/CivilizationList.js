@@ -9,6 +9,9 @@ const CivGridStyles = styled.div`
   // ** NOTE: CAN CHANGE TO minmax(300px (or 250px), 1fr) for showing 3 at a time **
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 2rem;
+  @media (max-width: 475px) {
+    display: block;
+  }
 `;
 
 // Single Civ Styling
