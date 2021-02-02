@@ -17,6 +17,9 @@ const LogoStyles = styled.div`
 export default function Logo() {
   return (
     <LogoStyles className="logo">
+      <div>
+        <img src={SiteLogo} alt="Civ VI Wonder Icon" className="icon-logo" />
+        <span className="onemoreturn">One More Turn</span>
       </div>
     </LogoStyles>
   );
