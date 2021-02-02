@@ -26,7 +26,7 @@ const NavStyles = styled.nav`
     &:hover {
       color: whitesmoke;
     }
-    @media (max-width: 800px) {
+    @media (max-width: 860px) {
       font-size: 2rem;
     }
     /* &[aria-current='page'] {
