@@ -6,7 +6,7 @@ import Logo from './Logo';
 const NavStyles = styled.nav`
   margin-bottom: 1.75rem;
   .logo {
-    transform: translateY(-25%);
+    transform: translateY(-15%);
   }
   ul {
     margin: 0;
