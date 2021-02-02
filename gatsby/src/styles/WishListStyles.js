@@ -28,6 +28,21 @@ const WishListStyles = styled.div`
       height: 600px;
     }
   }
+  .wishlist-button-style {
+    background: #dda832;
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2);
+    color: #232323;
+    border: 3px solid #dda833;
+    // border-radius: 8px;
+    transition: all 0.2s;
+    &:hover {
+      background: #8a3100;
+      border-color: #8a3100;
+      color: #dbdce1;
+      transition-duration: 0.25s;
+      box-shadow: inset 0 0 0 2px hsla(0, 0%, 100%, 0.2);
+    }
+  }
   @media (max-width: 900px) {
     fieldset.menu,
     fieldset.order {
