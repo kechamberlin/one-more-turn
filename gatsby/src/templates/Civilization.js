@@ -39,6 +39,8 @@ export const query = graphql`
     civilization: sanityCivilization(slug: { current: { eq: $slug } }) {
       name
       id
+      ability
+      description
       image {
         asset {
           fluid(maxWidth: 200) {
@@ -49,6 +51,23 @@ export const query = graphql`
       victories {
         name
         id
+      }
+      leaders {
+        id
+        intro
+        leader
+        bonus
+        description
+        image {
+          asset {
+            fixed(height: 250, width: 250) {
+              ...GatsbySanityImageFixed
+            }
+            fluid(maxWidth: 400) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
       }
     }
   }
