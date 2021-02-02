@@ -8,8 +8,14 @@ const FooterStyle = styled.div`
 
 export default function Footer() {
   return (
-    <footer>
+    <FooterStyle>
       <p>&copy; One More Turn {new Date().getFullYear()} </p>
-    </footer>
+      <p>
+        API Data Provided by{' '}
+        <a href="https://rawg.io/" rel="noreferrer" target="_blank">
+          RAWG Video Games Database
+        </a>
+      </p>
+    </FooterStyle>
   );
 }
