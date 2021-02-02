@@ -5,6 +5,7 @@ import Nav from './Nav';
 import Footer from './Footer';
 import GlobalStyles from '../styles/GlobalStyles';
 import Typography from '../styles/Typography';
+import bg from '../assets/images/bg_stone_repeat.webp';
 
 const SiteBorderStyles = styled.div`
   max-width: 1000px;
@@ -22,7 +23,7 @@ const SiteBorderStyles = styled.div`
 `;
 
 const ContentStyles = styled.div`
-  background: white;
+  background: url(${bg});
   padding: 2rem;
 `;
 
