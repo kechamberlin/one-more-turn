@@ -30,6 +30,25 @@ const CivilizationGrid = styled.div`
   }
 `;
 
+const CivHeader = styled.div`
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  padding: 2rem;
+`;
+
+const CivLeader = styled.div`
+  padding: 2rem;
+  align-content: middle;
+`;
+
+const CivFeatures = styled.div`
+  h1 {
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  padding: 2rem;
 `;
 
 export default function SingleCivPage({ data }) {
