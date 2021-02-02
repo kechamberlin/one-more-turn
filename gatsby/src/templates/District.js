@@ -68,6 +68,9 @@ export const query = graphql`
       adjacency
       image {
         asset {
+          fixed(height: 300, width: 300) {
+            ...GatsbySanityImageFixed
+          }
           fluid(maxWidth: 1000, maxHeight: 750) {
             ...GatsbySanityImageFluid
           }
