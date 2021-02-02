@@ -88,8 +88,10 @@ export default function SingleCivPage({ data }) {
                 <p>{leader.description}</p>
               </div>
             ))}
-          </ul>
-        </div>
+            <h2>{civilization.ability}</h2>
+            <p>{civilization.description}</p>
+          </div>
+        </CivFeatures>
       </CivilizationGrid>
     </>
   );
