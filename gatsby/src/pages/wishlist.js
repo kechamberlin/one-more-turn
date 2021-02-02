@@ -38,8 +38,10 @@ export default function WishListPage({ data }) {
                     'Scientific',
                   ].map((win) => (
                     <button
+                      className="wishlist-button-style"
                       type="button"
                       key={win}
+                      title={`Add ${civ.name}'s ${win} Victory to Wish List`}
                       onClick={() =>
                         addToOrder({
                           id: civ.id,
