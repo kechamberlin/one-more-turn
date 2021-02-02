@@ -22,6 +22,24 @@ export default {
         hotspot: true,
       },
     },
+    {
+      name: 'intro',
+      title: 'Leader Intro',
+      type: 'text',
+      description: 'Leader Introduction',
+    },
+    {
+      name: 'bonus',
+      title: 'Leader Bonus',
+      type: 'string',
+      description: 'Leader Bonus',
+    },
+    {
+      name: 'description',
+      title: 'Bonus Description',
+      type: 'text',
+      description: 'Leader Bonus Description',
+    },
   ],
   preview: {
     select: {
