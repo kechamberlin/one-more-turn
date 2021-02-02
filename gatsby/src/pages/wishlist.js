@@ -57,7 +57,7 @@ export default function WishListPage({ data }) {
             ))}
         </fieldset>
         <fieldset className="order">
-          <legend>Order</legend>
+          <legend>Wish List</legend>
           <CivilizationWishList
             order={order}
             removeFromOrder={removeFromOrder}
