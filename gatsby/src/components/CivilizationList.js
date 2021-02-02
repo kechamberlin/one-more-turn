@@ -23,7 +23,15 @@ const CivStyles = styled.div`
   grid-template-rows: var(--rows, subgrid);
   grid-row: span 1;
   grid-gap: 2rem;
+  border: 3px solid #dda833;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  h1,
   h2,
+  h3,
+  h4,
+  h5,
+  h6,
   p {
     margin: 0;
   }
