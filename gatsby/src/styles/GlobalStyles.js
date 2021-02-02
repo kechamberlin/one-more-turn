@@ -51,7 +51,7 @@ const GlobalStyles = createGlobalStyle`
     background: var(--white);
   }
   body::-webkit-scrollbar-thumb {
-    background-color: var(--red) ;
+    background-color: #dda832;
     border-radius: 6px;
     border: 3px solid var(--white);
   }
