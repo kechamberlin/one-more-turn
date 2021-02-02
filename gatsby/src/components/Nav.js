@@ -17,6 +17,7 @@ const NavStyles = styled.nav`
     grid-template-columns: auto 1fr 1fr 1fr 1fr;
     grid-gap: 2rem;
     align-items: center;
+    margin-top: -4rem;
   }
   a {
     font-size: 3rem;
