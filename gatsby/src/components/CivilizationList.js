@@ -35,6 +35,29 @@ const CivStyles = styled.div`
   p {
     margin: 0;
   }
+  a {
+    text-decoration: none;
+  }
+  .civ-icon {
+    border-radius: 50%;
+  }
+  .civ-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 2rem;
+  }
+  @media (max-width: 475px) {
+    margin-bottom: 2rem;
+  }
+  @media (max-width: 375px) {
+    .mobile-heading {
+      font-size: 3.2rem;
+    }
+    .mobile-name {
+      font-size: 2.5rem;
+    }
+  }
 `;
 
 function SingleCiv({ civ }) {
