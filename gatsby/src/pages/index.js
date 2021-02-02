@@ -7,6 +7,10 @@ import Loading from '../components/Loading';
 
 export default function HomePage({ data }) {
   const newCivs = data.new.nodes;
+
+  const [gameInfo, setGameInfo] = useState([]);
+  const [loading, setLoading] = useState(false);
+
   return (
     <>
       <SEO title="Home" />
