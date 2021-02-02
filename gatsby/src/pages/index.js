@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { graphql } from 'gatsby';
 import SEO from '../components/SEO';
 import NewList from '../components/NewList';
+import { HomePageIntroStyle, HomePageGrid } from '../styles/HomeGrids';
+import Loading from '../components/Loading';
 
 export default function HomePage({ data }) {
   const newCivs = data.new.nodes;
