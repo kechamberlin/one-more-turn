@@ -30,7 +30,6 @@ async function turnCivsIntoPages({ graphql, actions }) {
 }
 
 async function turnVictoriesIntoPages({ graphql, actions }) {
-  console.log('Turning the victories into pages');
   // 1. Get the template
   const victoryTemplate = path.resolve('./src/pages/civilizations.js');
   // 2. Query all the victories
@@ -46,7 +45,6 @@ async function turnVictoriesIntoPages({ graphql, actions }) {
   `);
   // 3. Create Page for that victory
   data.victories.nodes.forEach((victory) => {
-    console.log(`Creating page for victory`, victory.name);
     actions.createPage({
       path: `victory/${victory.name}`,
       component: victoryTemplate,
@@ -89,12 +87,8 @@ async function turnDistrictsIntoPages({ graphql, actions }) {
   // 3. Figure out how many pages there are based on how many Districts there are and how many per page
   const pageSize = parseInt(process.env.GATSBY_PAGE_SIZE);
   const pageCount = Math.ceil(data.specialty.totalCount / pageSize);
-  console.log(
-    `There are ${data.specialty.totalCount} total Districts and ${pageCount} pages with ${pageSize} per page `
-  );
   // 4. Loop over from 1 to n and create the pages for them
   Array.from({ length: pageCount }).forEach((_, i) => {
-    console.log(`Creating page ${i}`);
     actions.createPage({
       path: `/districts/${i + 1}`,
       component: path.resolve('./src/pages/districts.js'),
