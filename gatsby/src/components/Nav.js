@@ -24,7 +24,7 @@ const NavStyles = styled.nav`
     text-decoration: none;
     display: block;
     &:hover {
-      color: var(--red);
+      color: whitesmoke;
     }
     @media (max-width: 800px) {
       font-size: 2rem;
