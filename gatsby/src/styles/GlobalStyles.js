@@ -28,8 +28,7 @@ const GlobalStyles = createGlobalStyle`
     border: 1px solid rgba(0,0,0,0.1);
   }
   button {
-    background: var(--red);
-    color: white;
+    outline: none;
     border: 0;
     padding: 0.6rem 1rem;
     border-radius: 2px;
