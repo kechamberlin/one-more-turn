@@ -8,7 +8,7 @@ import Typography from '../styles/Typography';
 import bg from '../assets/images/bg_stone_repeat.webp';
 
 const SiteBorderStyles = styled.div`
-  max-width: 1000px;
+  max-width: 1025px;
   margin: 12rem auto 4rem auto;
   margin-top: clamp(2rem, 10vw, 12rem);
   background-size: 1500px;
