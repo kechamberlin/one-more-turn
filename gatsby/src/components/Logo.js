@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import SiteLogo from '../assets/images/Icon_district_wonder.png';
 
 const LogoStyles = styled.div`
   /* This value controls the entire size of the logo*/
