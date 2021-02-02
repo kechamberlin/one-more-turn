@@ -62,6 +62,11 @@ export default function HomePage({ data }) {
           </div>
         )}
       </HomePageIntroStyle>
+
+      <HomePageGrid>
+        <h1>Newest Civilizations</h1>
+        <NewList civs={newCivs} />
+      </HomePageGrid>
     </div>
   );
 }
