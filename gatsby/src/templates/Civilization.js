@@ -5,9 +5,31 @@ import styled from 'styled-components';
 import SEO from '../components/SEO';
 
 const CivilizationGrid = styled.div`
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  margin-bottom: 10rem;
+  padding: 2rem;
+  h1 {
+    margin-bottom: 1rem;
+  }
+  .leader-style {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0 2rem;
+    margin-top: 1rem;
+    align-items: center;
+  }
+  @media (max-width: 941px) {
+    display: block;
+    font-size: 1.5rem;
+    h1 {
+      font-size: 2.5rem;
+    }
+    .leader-style {
+      display: block;
+      text-align: center;
+    }
+  }
+`;
+
 `;
 
 export default function SingleCivPage({ data }) {
