@@ -42,19 +42,22 @@ export default function DistrictPage({ data: { district } }) {
   return (
     <>
       <SEO title={district.name} image={district.image?.asset?.fluid?.src} />
-      <div className="center">
-        <h2>
-          <span className="mark">{district.name}</span>
-        </h2>
-        <Img fluid={district.image.asset.fluid} />
-        <p>{district.description}</p>
-        <h2>Effects</h2>
-        <ul>
-          {district.adjacency.map((bonus) => (
-            <li key={bonus.id}>{bonus}</li>
-          ))}
-        </ul>
-      </div>
+      <SingleDistrictGrid>
+        <div>
+          <h1 className="district-name">{district.name}</h1>
+          <Img fixed={district.image.asset.fixed} alt={district.name} />
+          <p>{district.description}</p>
+        </div>
+
+        <div>
+          <h1 className="district-effect">Effects</h1>
+          <ul style={{ wordBreak: 'break-word' }}>
+            {district.adjacency.map((bonus, index) => (
+              <li key={`${district.id}-${index}`}>{bonus}</li>
+            ))}
+          </ul>
+        </div>
+      </SingleDistrictGrid>
     </>
   );
 }
