@@ -49,6 +49,40 @@ const WishListStyles = styled.div`
       grid-column: span 2;
     }
   }
+  @media (max-width: 530px) {
+    .wishlist-button-style {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 425px) {
+    .wishlist-button-style {
+      font-size: 1.2rem;
+      border: 2.5px solid #dda833;
+      padding: 0.35rem;
+    }
+  }
+  @media (max-width: 375px) {
+    .wishlist-button-style {
+      font-size: 0.9rem;
+      padding: 0.25rem;
+      text-shadow: none;
+      border: 1.5px solid #dda833;
+    }
+    .wishlist-civ-name {
+      font-size: 2rem;
+    }
+  }
+  @media (max-width: 320px) {
+    .wishlist-button-style {
+      font-size: 0.6rem;
+      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+      text-shadow: none;
+      border: 1px solid #dda833;
+    }
+    .wishlist-civ-name {
+      font-size: 1.9rem;
+    }
+  }
 `;
 
 export default WishListStyles;
