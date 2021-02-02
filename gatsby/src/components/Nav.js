@@ -45,7 +45,7 @@ const NavStyles = styled.nav`
       grid-column: 1 / -1;
     }
     .logo {
-      transform: none;
+      transform: -15%;
     }
   }
   @media (max-width: 500px) {
