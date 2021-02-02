@@ -17,7 +17,6 @@ const CivGridStyles = styled.div`
 // Single Civ Styling
 const CivStyles = styled.div`
   display: grid;
-  /* Take your row sizing not from the pizzaStyles div, but from the  PizzaGridStyles grid */
   @supports not (grid-template-rows: subgrid) {
     --rows: auto auto 1fr;
   }
