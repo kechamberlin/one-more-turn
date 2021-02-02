@@ -16,8 +16,9 @@ const GlobalStyles = createGlobalStyle`
   }
   html {
     background-image: url(${bg});
-    background-size: 450px;
+    background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     font-size: 10px;
   }
   body {
