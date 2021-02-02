@@ -75,9 +75,6 @@ function countCivsinVictories(civs) {
 }
 
 export default function VictoriesFilter({ activeVictory }) {
-  // Get a list of all the Victories
-  // Get a list of all the Civilizations with their Victories
-
   const { victories, civilizations } = useStaticQuery(graphql`
     query {
       victories: allSanityVictory {
@@ -97,19 +94,13 @@ export default function VictoriesFilter({ activeVictory }) {
       }
     }
   `);
-  console.clear();
-  // Count how many civs are in each victory type
   const victoriesWithCounts = countCivsinVictories(civilizations.nodes);
-  console.log(victoriesWithCounts);
-  // Loop over the list of victories and display the victory and the count of civs in that victory
-
   return (
     <VictoriesStyles>
       <Link to="/civilizations">
         <span>All</span>
         <span className="count">{civilizations.nodes.length}</span>
       </Link>
-      {/* <p>VICTORIES</p> */}
       {victoriesWithCounts
         .sort((a, b) => a.name.localeCompare(b.name))
         .map((victory) => (
