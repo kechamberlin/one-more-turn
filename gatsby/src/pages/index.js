@@ -29,6 +29,39 @@ export default function HomePage({ data }) {
   return (
     <div className="center">
       <SEO title="Home" />
+
+      <HomePageIntroStyle>
+        {loading ? (
+          <Loading />
+        ) : (
+          <div>
+            <div className="home-image">
+              <img src={gameInfo.background_image} alt="official game cover" />
+              <div className="image-text">One... More... Turn...</div>
+            </div>
+            <p>
+              Welcome to One More Turn! This app is a gameplay tracker for
+              everyone's favorite Strategy game {gameInfo.name}.
+            </p>
+            <p>
+              We have all been there: we click 'Create Game' and suddenly feel
+              overwhelmed by the nearly 50 civilizations and their endless
+              victory combinations.
+            </p>
+            <p>
+              By using One More Turn, you can easily organize all the
+              civilizations you want to play, how you want to play them.
+            </p>
+
+            <p>
+              For the latest news and updates, visit{' '}
+              <a href={gameInfo.website} rel="noreferrer" target="_blank">
+                the official website.
+              </a>
+            </p>
+          </div>
+        )}
+      </HomePageIntroStyle>
     </div>
   );
 }
