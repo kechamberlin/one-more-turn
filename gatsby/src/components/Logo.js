@@ -8,6 +8,7 @@ const LogoStyles = styled.div`
   height: 30em;
   margin: 0;
   display: flex;
+  text-align: center;
     line-height: 1;
     }
   }
