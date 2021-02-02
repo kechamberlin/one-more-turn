@@ -16,6 +16,7 @@ const VictoriesStyles = styled.div`
     align-items: center;
     padding: 5px;
     background: var(--grey);
+    box-shadow: 0 -5px 8px #888888;
     border-radius: 2px;
     text-decoration: none;
     font-size: clamp(1.5rem, 1.4vw, 2.5rem);
