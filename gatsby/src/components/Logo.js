@@ -9,6 +9,12 @@ const LogoStyles = styled.div`
   margin: 0;
   display: flex;
   text-align: center;
+  .onemoreturn {
+    color: #f5efd7;
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-shadow: 1px 2px 4px black;
+    letter-spacing: 0.2rem;
     line-height: 1;
     }
   }
