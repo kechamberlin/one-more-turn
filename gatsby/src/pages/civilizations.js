@@ -42,7 +42,7 @@ export const query = graphql`
           leader
           image {
             asset {
-              fixed(height: 200, width: 200) {
+              fixed(height: 165, width: 165) {
                 ...GatsbySanityImageFixed
               }
               fluid(maxWidth: 100) {
@@ -53,7 +53,7 @@ export const query = graphql`
         }
         image {
           asset {
-            fixed(width: 65, height: 65) {
+            fixed(width: 50, height: 50) {
               ...GatsbySanityImageFixed
             }
             fluid(maxWidth: 100) {
