@@ -63,11 +63,15 @@ const GlobalStyles = createGlobalStyle`
   img {
     max-width: 100%;
   }
-  .tilt {
-    transform: rotate(-2deg);
-    position: relative;
+  ul {
+    text-align: left;
     display: inline-block;
   }
+  // @media (max-width: 450px) {
+  //   html {
+  //     background: slategray;
+  //   }
+  // })
 `;
 
 export default GlobalStyles;
