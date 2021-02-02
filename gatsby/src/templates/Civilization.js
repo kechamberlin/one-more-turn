@@ -60,12 +60,33 @@ export default function SingleCivPage({ data }) {
         image={civilization.image?.asset?.fluid?.src}
       />
       <CivilizationGrid>
-        <Img fluid={civilization.image.asset.fluid} />
-        <div>
-          <h2 className="mark">{civilization.name}</h2>
-          <ul>
-            {civilization.victories.map((victory) => (
-              <li key={victory.id}>{victory.name}</li>
+        <CivHeader className="center">
+          <h1>{civilization.name}</h1>
+          <span>
+            {civilization.victories.map((victory) => victory.name).join(', ')}
+          </span>
+        </CivHeader>
+
+        <CivLeader>
+          {civilization.leaders.map((leader) => (
+            <div className="leader-style" key={leader.id}>
+              <Img fluid={leader.image.asset.fluid} />
+              <div>
+                <h1>{leader.leader}</h1>
+                <p>{leader.intro}</p>
+              </div>
+            </div>
+          ))}
+        </CivLeader>
+
+        <CivFeatures>
+          <h1>Features &amp; Abilities</h1>
+          <div>
+            {civilization.leaders.map((leader) => (
+              <div key={leader.id}>
+                <h2>{leader.bonus}</h2>
+                <p>{leader.description}</p>
+              </div>
             ))}
           </ul>
         </div>
