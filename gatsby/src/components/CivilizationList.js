@@ -41,10 +41,14 @@ function SingleCiv({ civ }) {
   return (
     <CivStyles className="center">
       <Link to={`/civilization/${civ.slug.current}`}>
-        <h2>
-          <Img fixed={civ.image.asset.fixed} alt={civ.name} />
-          <span className="mark">{civ.name}</span>
-        </h2>
+        <div className="civ-title">
+          <Img
+            className="civ-icon"
+            fixed={civ.image.asset.fixed}
+            alt={civ.name}
+          />
+          <h1 className="mobile-heading">{civ.name}</h1>
+        </div>
       </Link>
 
       <p>{civ.victories.map((victory) => victory.name).join(', ')}</p>
