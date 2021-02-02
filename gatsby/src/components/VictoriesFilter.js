@@ -108,18 +108,19 @@ export default function VictoriesFilter({ activeVictory }) {
             key={victory.id}
             to={`/victory/${victory.name}`}
             className={
-              victory.name === activeVictory && victory.name === 'Domination'
-                ? 'domination'
-                : victory.name === activeVictory && victory.name === 'Cultural'
+              victory.name === activeVictory && victory.name === 'Cultural'
                 ? 'cultural'
+                : victory.name === activeVictory &&
+                  victory.name === 'Diplomatic'
+                ? 'diplomatic'
+                : victory.name === activeVictory &&
+                  victory.name === 'Domination'
+                ? 'domination'
                 : victory.name === activeVictory && victory.name === 'Religious'
                 ? 'religious'
                 : victory.name === activeVictory &&
                   victory.name === 'Scientific'
                 ? 'scientific'
-                : victory.name === activeVictory &&
-                  victory.name === 'Diplomatic'
-                ? 'diplomatic'
                 : ''
             }
           >
