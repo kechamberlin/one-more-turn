@@ -7,33 +7,55 @@ const PaginationStyles = styled.div`
   align-content: center;
   align-items: center;
   justify-items: center;
-  border: 1px solid var(--grey);
-  margin: 2rem 0;
-  border-radius: 5px;
+  margin: 4rem 0;
+  padding: 1rem;
+  background-color: whitesmoke;
+  border-radius: 4rem;
+  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.5);
   text-align: center;
+  font-weight: 400;
   & > * {
     padding: 1rem;
     flex: 1;
-    border-right: 1px solid var(--grey);
+    width: 10rem;
+    background-color: var(--white);
+    border-radius: 0.4rem;
+    margin: 2px;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1),
+      0 2px 5px rgba(0, 0, 0, 0.5);
     text-decoration: none;
+    &:first-child {
+      border-radius: 40px 0 0 40px;
+    }
+    &:last-child {
+      border-radius: 0 40px 40px 0;
+    }
+
     &[aria-current],
     &.current {
       color: var(--red);
+      border-bottom: 0.4rem solid var(--red);
+      box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.2),
+        0 4px 5px rgba(0, 0, 0, 0.5);
     }
     &[disabled] {
       pointer-events: none;
-      color: var(--grey);
+      color: lightgray;
     }
-    // :hover {
-    //   background: lightgray;
-    //   text-decoration: underline;
-    // }
   }
   @media (max-width: 800px) {
-    .word {
+    .PagPrevNext {
       display: none;
     }
     font-size: 1.4rem;
+  }
+  @media (max-width: 375px) {
+    & > * {
+      &[aria-current],
+      &.current {
+        border-bottom: none;
+      }
+    }
   }
 `;
 
