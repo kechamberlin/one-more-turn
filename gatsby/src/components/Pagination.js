@@ -77,7 +77,8 @@ export default function Pagination({
         disabled={!hasPrevPage}
         to={`${base}/${prevPage}`}
       >
-        ⬅ {!hasPrevPage ? '' : <span className="PagPrevNext">Prev</span>}
+        {'\u2B05 '}
+        {!hasPrevPage ? '' : <span className="PagPrevNext">Prev</span>}
       </Link>
       {Array.from({ length: totalPages }).map((_, i) => (
         <Link
