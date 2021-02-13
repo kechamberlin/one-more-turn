@@ -94,8 +94,8 @@ export default function Pagination({
         disabled={!hasNextPage}
         to={`${base}/${nextPage}`}
       >
-        {!hasNextPage ? '' : <span className="PagPrevNext">Next</span>}{' '}
-        {'\u2b95'}
+        {!hasNextPage ? '' : <span className="PagPrevNext">Next</span>}
+        {' \u2b95'}
       </Link>
     </PaginationStyles>
   );
